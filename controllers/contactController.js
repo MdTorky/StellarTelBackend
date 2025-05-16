@@ -31,7 +31,7 @@ export const submitContact = async (req, res) => {
             // Send email
             await transporter.sendMail({
                 from: process.env.SMTP_FROM,
-                to: "mohamed2003torky@gmail.com",
+                to: "andrewpenders@stellartel.com.my",
                 subject: "New Contact Submission - StellarTel Website",
                 html: `
           <h2>New Contact Form Submission</h2>
