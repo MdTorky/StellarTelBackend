@@ -17,6 +17,8 @@ app.use(cors());
 app.use(express.json());
 app.use("/api", contactRoutes);
 
+console.log("API:" + process.env.SMTP_USER)
+
 mongoose
     .connect(process.env.MONGODB_URI)
     .then(() => {

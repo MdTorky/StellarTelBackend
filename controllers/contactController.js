@@ -17,7 +17,6 @@ export const submitContact = async (req, res) => {
 
         // Send email notification
         try {
-            // Configure transporter (this would use your actual SMTP settings in production)
             const transporter = nodemailer.createTransport({
                 // Replace with actual SMTP settings
                 host: process.env.SMTP_HOST,
@@ -32,7 +31,7 @@ export const submitContact = async (req, res) => {
             // Send email
             await transporter.sendMail({
                 from: process.env.SMTP_FROM,
-                to: "mtra1234455@gmail.com",
+                to: "mohamed2003torky@gmail.com",
                 subject: "New Contact Submission - StellarTel Website",
                 html: `
           <h2>New Contact Form Submission</h2>
